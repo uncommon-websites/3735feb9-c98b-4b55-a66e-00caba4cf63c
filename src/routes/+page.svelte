@@ -7,16 +7,49 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={true}
+  title="More time, fewer tabs"
+  subtitle="Suna completes time-consuming tasks like lead generation, market research, recruitment, and trip planning—so you can focus on real work, not repetitive clicks."
+  customers={[
+    {
+      name: "Michael Chen, head of growth at HiveLook",
+      position: undefined,
+      imageSrc: "/generated/image-a-professional-man-is-positioned-in-a-st.webp",
+      testimonial: "Suna did three weeks of lead research in one day. I just dropped in a target account list and it handled the rest."
+    },
+    {
+      name: "Laura Gómez, founder at Alta Bend",
+      position: undefined,
+      imageSrc: "/generated/image-a-confident-businesswoman-sits-at-her-de.webp",
+      testimonial: "We needed to analyze over 20 competitors across multiple sites. Suna did the research and delivered a clean market report overnight."
+    },
+    {
+      name: "Raj Patel, recruiter at Thread Partners",
+      position: undefined,
+      imageSrc: "/generated/image-a-businessman-is-comfortably-seated-in-h.webp",
+      testimonial: "Sourcing candidates used to take hours of LinkedIn digging. Suna finds qualified profiles fast—with full context and links."
+    },
+    {
+      name: "Sophie Tran, COO at Nomida Labs",
+      position: undefined,
+      imageSrc: "/generated/image-a-young-woman-is-in-a-creative-workspace.webp",
+      testimonial: "We planned an entire company offsite in Lisbon—flights, hotels, co-working—all in one run. Suna just figured it out."
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/zapier.com',
+		'https://logo.clearbit.com/monday.com',
+		'https://logo.clearbit.com/hubspot.com',
+		'https://logo.clearbit.com/lever.co'
+	]}
+/>
 
 <Summary
 	generating
@@ -24,38 +57,8 @@
 	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
 />
 
-<Testimonials
-	generating
-	testimonials={[
-		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
-			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		},
-		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
-			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		},
-		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
-			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		}
-	]}
-/>
+
+
 
 <Features
 	generating
