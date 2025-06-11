@@ -15,35 +15,49 @@
 <Pricing />
 
 <Testimonials
-	testimonials={[
-		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
-			quote:
-				"This solution transformed our workflow and increased productivity by 35% in just two months.",
-			image:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
-			quote:
-				"The implementation was seamless and the support team was exceptional throughout the process.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
-			quote:
-				"We've tried multiple solutions, but this is the only one that perfectly addressed all our requirements.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&estimonial-3.jpg"
-		}
-	]}
+  testimonials={[
+    {
+      name: "Javier Huang",
+      position: "Operations Lead",
+      company: "LinearNorth",
+      quote:
+        "We crunched the numbers—Suna saves us over 25 hours a month in research time. At $20, it basically pays for itself in a single automated task.",
+      image: "/generated/image-a-professional-hispanic-man-in-a-dynamic.webp"
+    },
+    {
+      name: "Marisol Dubois",
+      position: "Digital Strategist",
+      company: "Serenno Media",
+      quote:
+        "I was up and running the same afternoon. No learning curve, no integrations. It just worked—instantly started pulling backlinks for our SEO team.",
+      image: "/generated/image-a-professional-french-woman-in-a-creativ.webp"
+    },
+    {
+      name: "Celeste Ncube",
+      position: "VP Sales Systems",
+      company: "Cloudspire Labs",
+      quote:
+        "Suna has completely reshaped how our team operates. What used to take a sales admin an entire week now runs overnight with zero supervision.",
+      image: "/generated/image-a-professional-black-woman-in-a-bustling.webp"
+    }
+  ]}
 />
 
-<CallToAction />
+<CallToAction
+  title="The AI teammate that gets work done"
+  subtitle="Focus on high-value work. Let Suna do the rest."
+  description="Suna by Kortix is your autonomous AI agent, ready to handle research, lead generation, recruiting, travel plans, and more—without constant oversight. Skip repetitive tasks and start moving work forward. Get started free, or check out our open-source code on GitHub."
+  imageSrc="/generated/image-a-cheerful-individual-sitting-at-a-woode.webp"
+  callsToAction={[
+    {
+      href: '/signup',
+      label: 'Get started free now',
+      variant: 'primary'
+    },
+    {
+      href: 'https://github.com/kortix-ai/suna',
+      label: 'See it on GitHub',
+      variant: 'secondary'
+    }
+  ]}
+/>

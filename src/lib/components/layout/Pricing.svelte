@@ -40,6 +40,87 @@ Please update features according to the company's product offering. Do not remov
 		tierNames = ["Starter", "Pro", "Enterprise"],
 		features = [
 			{
+				name: "Monthly usage (minutes)",
+				tiers: {
+					Free: "60",
+					Pro: "120",
+					Custom: "360+"
+				}
+			},
+			{
+				name: "AI model",
+				tiers: {
+					Free: "Basic Model",
+					Pro: "Intelligent Model (Full Suna)",
+					Custom: "Intelligent Model (Full Suna)"
+				}
+			},
+			{
+				name: "Project privacy",
+				tiers: {
+					Free: "Public only",
+					Pro: "Private & public",
+					Custom: "Private & public"
+				}
+			},
+			{
+				name: "Cloud access",
+				tiers: {
+					Free: true,
+					Pro: true,
+					Custom: true
+				}
+			},
+			{
+				name: "Self-hosted option",
+				tiers: {
+					Free: true,
+					Pro: true,
+					Custom: true
+				}
+			},
+			{
+				name: "Integrations",
+				tiers: {
+					Free: "Limited",
+					Pro: "Standard",
+					Custom: "Extended/custom"
+				}
+			},
+			{
+				name: "Priority support",
+				tiers: {
+					Free: "Community only",
+					Pro: "Email support",
+					Custom: "Email & SLAs"
+				}
+			},
+			{
+				name: "SLA (Service Level Agreement)",
+				tiers: {
+					Free: false,
+					Pro: false,
+					Custom: "Available upon request"
+				}
+			},
+			{
+				name: "GitHub access",
+				tiers: {
+					Free: true,
+					Pro: true,
+					Custom: true
+				}
+			},
+			{
+				name: "Open source",
+				tiers: {
+					Free: true,
+					Pro: true,
+					Custom: true
+				}
+			}
+		],
+			{
 				name: "Projects",
 				tiers: {
 					Starter: "5",
@@ -114,53 +195,54 @@ Please update features according to the company's product offering. Do not remov
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "Free",
+				monthlyPrice: 0,
+				yearlyPrice: 0,
+				description: "Try Suna with core features and 60 minutes each month. Great for public projects and getting started.",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"60 minutes per month",
+					"Basic Model",
+					"Public projects only",
+					"Community support",
+					"Cloud & self-host available",
+					"Limited integrations"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Start for free",
+					href: "/signup?plan=free"
 				}
 			},
 			{
 				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				monthlyPrice: 20,
+				yearlyPrice: 16,
+				description: "Full intelligent agent usage for your private and public projects. Best for teams and pros.",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"120 minutes per month",
+					"Intelligent Model (Full Suna)",
+					"Private & public projects",
+					"Email support",
+					"Standard integrations",
+					"Cloud & self-host available"
 				],
 				cta: {
-					label: "Get started",
+					label: "Upgrade to Pro",
 					href: "/signup?plan=pro"
 				},
 				highlight: true
 			},
 			{
-				name: "Enterprise",
-				monthlyPrice: null,
-				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				name: "Custom",
+				monthlyPrice: 50,
+				yearlyPrice: 40,
+				description: "Custom usage, features, and support for high-volume teams who need more. Starts at 360+ minutes monthly.",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"360+ minutes per month",
+					"Intelligent Model (Full Suna)",
+					"Private & public projects",
+					"Email & SLA support",
+					"Extended or custom integrations",
+					"Custom terms available"
 				],
 				cta: {
 					label: "Contact sales",

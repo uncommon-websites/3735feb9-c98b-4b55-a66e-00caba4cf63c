@@ -26,18 +26,17 @@
 </script>
 
 <SecondaryHero
-	title="Solving world hunger"
-	subtitle="one step at a time"
-	imageSrc="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+	title="Your open source AI employee"
+	subtitle="Automate research, sales, hiring, and more with a generalist agent that works across the web"
+	imageSrc="/mockups/airport-screen-1749639985552.png"
 />
 
 <!-- Story Section -->
 <Story
 	paragraphs={[
-		"We started in 2018 with a simple goal: make helpful tech that people actually need. While many chase profits, we chose to do things differently.",
-		"Beyond making good products, we care about doing the right thing, being kind to our planet, and making sure everyone can use what we build. That's our compass.",
-		"From day one, we've asked ourselves: 'Does this actually help people?' This question gets us through tough calls and shapes who we are. We're playing the long game here.",
-		"We think about how our work affects real people's lives. We build tech that brings people together, keeps your information safe, and treats everyone fairly. When we stick to these basics, good things happen."
+		"We created Suna because we kept running into the same problem—too much time spent on repetitive, online work. From digging through websites for research to manually gathering data, it was clear there had to be a better way to offload this kind of busywork and focus on higher-value thinking. Sound familiar?",
+		"Suna is our answer. It's a generalist AI agent that works on your behalf—finding leads, drafting emails, planning trips, extracting data, and more. It handles a broad scope of digital tasks fully autonomously, like having a smart, tireless assistant who learns quickly and never misses a step. Suna helps individuals and teams do more, with fewer distractions.",
+		"We're building Suna in the open. It's 100% open source, licensed under Apache 2.0, and available on GitHub. Anyone can use it, host it, improve it, or contribute to it. We're a growing, global community of builders, tinkerers, and professionals making everyday work a little less manual—for everyone."
 	]}
 />
 
@@ -47,52 +46,31 @@
 <!-- StakeholderGrid Section -->
 <StakeholderGrid
 	stakeholderType="team"
-	title="Our team."
-	subtitle="Your partners in innovation."
-	stakeholders={[
-		{
-			name: "Alex Morgan",
-			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80"
-		},
-		{
-			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
-			image:
-				"https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-		}
-	]}
-/>
+	title="Our community."
+	subtitle="Built by contributors from around the world."
+	stakeholders={[]}
+>
+	<div class="text-center max-w-xl mx-auto mt-8">
+		<h3 class="text-lg font-semibold mb-2">A global open source project</h3>
+		<p class="mb-4 text-body">Suna by Kortix is built and improved every day by a diverse group of open-source contributors. There is no classic org chart—just a growing, global collective making AI autonomy accessible to everyone. Anyone can join, contribute, or suggest ideas. All progress happens in the open on <a href="https://github.com/kortix-ai/suna" target="_blank" class="underline">GitHub</a>.</p>
+		<p class="font-medium">Interested in shaping the future of autonomous AI? <a href="https://github.com/kortix-ai/suna" target="_blank" class="underline">Contribute or get involved</a>.</p>
+	</div>
+</StakeholderGrid>
+
 
 <StakeholderGrid
 	stakeholderType="investor"
-	title="Backed by the best."
-	subtitle="Point Nine, TSIC and others"
-	stakeholders={[
-		{
-			name: "Point Nine Capital",
-			image: "https://cdn.brandfetch.io/pointnine.com/w/400/h/400/logo?c=1id_elLz2Bd5Ej-dWo7"
-		},
-		{
-			name: "TSIC Ventures",
-			image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
-		},
-		{
-			name: "Sequoia Capital",
-			image: "https://cdn.brandfetch.io/sequoiacap.com/w/400/h/400/logo"
-		}
-	]}
-/>
+	title="Proudly independent."
+	subtitle="Community-owned. No outside investors."
+	stakeholders={[]}
+>
+	<div class="text-center max-w-xl mx-auto mt-8">
+		<h3 class="text-lg font-semibold mb-2">No investors. No hidden agenda.</h3>
+		<p class="mb-4 text-body">Suna by Kortix is entirely community-owned, open source, and independent. There are no external investors or corporate backers. Every line of code and every decision happens in the open—with full transparency, for the benefit of everyone.</p>
+		<p><a href="https://github.com/kortix-ai/suna" target="_blank" class="underline">See our progress on GitHub</a></p>
+	</div>
+</StakeholderGrid>
+
 
 <!-- CTA Section -->
 <CallToAction

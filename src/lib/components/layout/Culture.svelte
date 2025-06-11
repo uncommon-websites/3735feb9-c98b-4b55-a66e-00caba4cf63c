@@ -10,7 +10,24 @@
 	};
 
 	// Props
-	const { values = [] }: { values: Value[] } = $props();
+	const { values = [
+  {
+    title: "Open by default",
+    description: "Suna is 100% open source—built to be transparent, auditable, and shaped by its users. You can read the code, suggest improvements, or run your own instance with no hidden parts."
+  },
+  {
+    title: "Engineered for reliability",
+    description: "We think trust is earned. Suna is held to a high bar: if it can’t do the job like a real assistant, it doesn’t ship. You can count on accurate, actionable results, every time."
+  },
+  {
+    title: "Empowering, not replacing",
+    description: "Suna handles the time sinks and digital busywork so you can focus on work that matters. It’s here to extend what you can achieve—not automate you out of the equation."
+  },
+  {
+    title: "Community-driven progress",
+    description: "Everyone can shape how Suna grows. Join a global group of contributors and users building tools that solve real problems—for real people, everywhere."
+  }
+]: { values: Value[] } = $props();
 
 	let cards: HTMLElement[] = $state([]);
 

@@ -50,19 +50,30 @@
 
 	// Props
 	const {
-		title = "Get started today",
-		subtitle = "Join now",
-		description = "Ready to experience the difference? Join our community of satisfied customers and see how our solution can transform your workflow. ",
-		imageSrc = "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-		callsToAction = [cta],
-		...rest
-	}: {
-		title?: string;
-		subtitle?: string;
-		description?: string;
-		imageSrc?: string;
-		callsToAction?: CTA[];
-	} = $props();
+  title = "Time-consuming tasks? Send Suna.",
+  subtitle = "The open-source AI agent that does real work for you.",
+  description = "From research to outreach to planning, Suna by Kortix acts as your most versatile digital teammate. Try Suna for free, or dive into the code on GitHub.",
+  imageSrc = "/generated/image-a-tech-professional-smiling-while-sittin.webp",
+  callsToAction = [
+    {
+      href: "/get-started",
+      label: "Get started free",
+      variant: "primary"
+    },
+    {
+      href: "https://github.com/kortix-ai/suna",
+      label: "View on GitHub",
+      variant: "secondary"
+    }
+  ],
+  ...rest
+}: {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  imageSrc?: string;
+  callsToAction?: CTA[];
+} = $props();
 </script>
 
 <div class="" {...rest}>
